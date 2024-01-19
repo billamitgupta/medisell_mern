@@ -17,13 +17,20 @@
 ## Similar Website
   - Udaan
   - IndiaMart
+  - Alibaba
+  
 
 ## How do you want to solve it?
 
    - Creating different sections for Company and retailer
    - Direct video conferencing between client and dealer 
+   - bringing all retailer under one platfrom which will ease for campany to pitch their product 
+   - Sponsored product feature enable new company to grow fast by reaching to larger market
   
 ## List of features you want to implement.
 
     - Price Calculator 
-    - Offers section 
+    - Offers section
+    - E-billing 
+    - Video calling
+   

@@ -9,12 +9,11 @@ app.get("/", (req,res)=>{
 });
 app.get("/video_conference", (res,req)=>{
     res.send("Requesting for video call");
-    
     console.log(res);
 });
 app.get("/product/:id", (req,res)=>{
     const id = req.params.id;
-    res.send(`Hello friend! ${id}`);
+    res.send(`Product id is ${id}`);
     //console.log(req);
 });
 app.get("/user_login/:username",(req,res)=>{
