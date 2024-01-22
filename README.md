@@ -8,6 +8,8 @@
 
 # API (HTTP request) DOCUMENTATION 
  https://documenter.getpostman.com/view/32332388/2s9YymFjRm
+# Figma PROTOTYPE
+ - https://www.figma.com/file/gRWRdXCtDY4HhZ7VPHSpJK/Untitled?type=design&node-id=0%3A1&mode=design&t=Z2wG9VhEjHzW8nV4-1
  ## Which problem Project is Solving?
   - Business-to-business deals
   - Logistics issues 
