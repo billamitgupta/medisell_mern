@@ -6,7 +6,9 @@
 
 ### Project Name: MediSell
 
-- Which problem Project is Solving?
+# API (HTTP request) DOCUMENTATION 
+ https://documenter.getpostman.com/view/32332388/2s9YymFjRm
+ ## Which problem Project is Solving?
   - Business-to-business deals
   - Logistics issues 
   - Establishing a connection between Distributor and retailer through Video conferencing 
