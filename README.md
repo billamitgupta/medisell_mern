@@ -37,4 +37,6 @@
     - Offers section
     - E-billing 
     - Video calling
+    - filter on bases of company 
+    - search bar
    

@@ -1,0 +1,23 @@
+.footer{
+    background: white;
+}
+.foot{
+    display: grid;
+    
+    grid-template-columns: auto auto auto ;
+    padding: 2vh;
+    margin-left: 10vh;
+    grid-gap: 20vh;
+}
+.p_footer{
+    font-weight: 500;
+    font-style: oblique;
+}
+.h2-footer{
+    font-weight: 700;
+}
+.und{
+    border-style: solid;
+    border-width: .2vh;
+    border-color: aquamarine;
+}
