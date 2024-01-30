@@ -8,32 +8,32 @@ function Footer() {
         <div className='foot'>     
         
         <div >
-            <h2 >SMH</h2>
+            <h2 className='h2_footer'>SMH</h2>
             <div className='und'></div>
             <div>
-                <p >About US</p>
-                <p >FAQs</p>
-                <p >Privacy Policy</p>
+                <p className='p_footer'>About US</p>
+                <p className='p_footer'>FAQs</p>
+                <p className='p_footer'>Privacy Policy</p>
             </div>
         </div>
         <div >
-            <h2 >SMH</h2>
+            <h2 className='h2_footer'>SMH</h2>
             <div className='und'></div>
             <div>
-                <p >Products</p>
-                <p >jop portal</p>
-                <p >Skill portals</p>
-                <p >Achievment</p>
-                <p></p>
+                <p className='p_footer'>Products</p>
+                <p className='p_footer'>jop portal</p>
+                <p className='p_footer'>Skill portals</p>
+                <p className='p_footer'>Achievment</p>
+                
             </div>
         </div>
         <div >
-            <h2 >SMH</h2>
+            <h2 className='h2_footer'>SMH</h2>
             <div className='und' ></div>
             <div>
-                <p >About US</p>
-                <p >FAQs</p>
-                <p >Privacy Policy</p>
+                <p className='p_footer'>About US</p>
+                <p className='p_footer'>FAQs</p>
+                <p className='p_footer'>Privacy Policy</p>
             </div>
         </div>
         </div> 

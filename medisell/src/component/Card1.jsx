@@ -9,7 +9,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Unstable_Grid2'; // Grid version 2
-import { Skeleton } from '@mui/material';
+// import { Skeleton } from '@mui/material';
 
 function Card1(){
     return(
@@ -17,7 +17,7 @@ function Card1(){
         <Grid container spacing={1}>
         <Grid xs={4} md={4}> 
         <div>
-        {/* <Skeleton variant="rectangular" width={210} height={118} /> */}
+ 
         <Card sx={{ maxWidth: 300,  margin:5,}}>
       <CardMedia
         sx={{ height: 200, width: 200, marginLeft:5,}}

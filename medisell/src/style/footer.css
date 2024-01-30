@@ -9,11 +9,11 @@
     margin-left: 10vh;
     grid-gap: 20vh;
 }
-p{
+.p_footer{
     font-weight: 500;
     font-style: oblique;
 }
-h2{
+.h2-footer{
     font-weight: 700;
 }
 .und{
