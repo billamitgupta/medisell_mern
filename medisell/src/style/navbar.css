@@ -1,6 +1,6 @@
 .nav{
     display: flex ;
-    justify-content: center;
+    /* justify-content: center; */
     background: linear-gradient(180deg, #89C8DD 0%, #73ADC1 100%);
     
     box-shadow: #6dd5ed;
