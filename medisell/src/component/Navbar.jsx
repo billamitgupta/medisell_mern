@@ -17,9 +17,9 @@ function Navbar() {
         <li><Link to="/product">Product</Link></li>
         <li><Link to="/aboutus">AboutUs</Link></li>
     </ul>
-    <Button sx={{marginTop:1 ,left:"25vh"}} variant="contained" disableElevation>
+   <Link to="/signin"> <Button sx={{marginTop:1 ,left:"25vh"}} variant="contained" disableElevation>
       SignIn
-    </Button>
+    </Button></Link>
     <Link to="/login"><Button sx={{marginTop:1 ,left:"28vh"}} variant="contained" disableElevation>
       Login
     </Button></Link>
