@@ -7,11 +7,16 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 
-
 function Product() {
   return (
-    <div className="div" style={{background: "radial-gradient(243.55% 153.69% at 23.48% -1.07%, #EBF3F5 10.46%, #C5E2F0 100%)"}}>
-      <Grid container spacing={-1} style={{marginRight:'5vh'}}>
+    <div
+      className="div1"
+      style={{
+        background:
+          "radial-gradient(243.55% 153.69% at 23.48% -1.07%, #EBF3F5 10.46%, #C5E2F0 100%)",
+      }}
+    >
+      <Grid container spacing={-1} style={{ marginRight: "5vh" }}>
         <Grid xs={3} md={3}>
           <div>
             <Card sx={{ margin: 5 }} style={{ width: "40vh" }}>
@@ -23,11 +28,10 @@ function Product() {
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                Thrize Ds Strip Of 10 Tablets
-
+                  Thrize Ds Strip Of 10 Tablets
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                MRP ₹525.00
+                  MRP ₹525.00
                 </Typography>
               </CardContent>
               <CardActions>
@@ -48,11 +52,10 @@ function Product() {
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                Phenergan Syrup 100ml
+                  Phenergan Syrup 100ml
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
                   Price: ₹42.89* MRP ₹50.46
-                  
                 </Typography>
               </CardContent>
               <CardActions>
@@ -66,18 +69,17 @@ function Product() {
           <div>
             <Card sx={{ margin: 5 }} style={{ width: "40vh" }}>
               <CardMedia
-                sx={{ height: 90, width:150, marginLeft: 5 }}
+                sx={{ height: 90, width: 150, marginLeft: 5 }}
                 image="https://cdn01.pharmeasy.in/dam/products/I00717/phytoral-oint-30gm-1-1641533687.jpg"
                 title="green iguana"
                 className="image"
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                Phytoral Oint 30gm
-                By MICRO LABS
+                  Phytoral Oint 30gm By MICRO LABS
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                MRP ₹286.00
+                  MRP ₹286.00
                 </Typography>
               </CardContent>
               <CardActions>
@@ -98,10 +100,10 @@ function Product() {
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                Hyphoral Strip Of 10 Tablets
+                  Hyphoral Strip Of 10 Tablets
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                MRP ₹384.55
+                  MRP ₹384.55
                 </Typography>
               </CardContent>
               <CardActions>
@@ -122,10 +124,10 @@ function Product() {
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                Phytoral Dusting Powder 100gm
+                  Phytoral Dusting Powder 100gm
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                MRP ₹201.00
+                  MRP ₹201.00
                 </Typography>
               </CardContent>
               <CardActions>
@@ -146,10 +148,10 @@ function Product() {
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                Nizer 100mg Strip Of 10 Tablets
+                  Nizer 100mg Strip Of 10 Tablets
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                MRP ₹66.15
+                  MRP ₹66.15
                 </Typography>
               </CardContent>
               <CardActions>
@@ -170,10 +172,10 @@ function Product() {
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                Ondem Syrup 30m
+                  Ondem Syrup 30m
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                MRP ₹42.00
+                  MRP ₹42.00
                 </Typography>
               </CardContent>
               <CardActions>
@@ -194,10 +196,10 @@ function Product() {
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                Ondem Md 4mg Strip Of 10 Tablets
+                  Ondem Md 4mg Strip Of 10 Tablets
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                MRP ₹57.46
+                  MRP ₹57.46
                 </Typography>
               </CardContent>
               <CardActions>
@@ -218,10 +220,10 @@ function Product() {
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                Alkof Junior Cough Syrup 100ml
+                  Alkof Junior Cough Syrup 100ml
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                ₹91.80*
+                  ₹91.80*
                 </Typography>
               </CardContent>
               <CardActions>
@@ -242,10 +244,10 @@ function Product() {
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                Azikem 250mg Strip Of 6 Tablets
+                  Azikem 250mg Strip Of 6 Tablets
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                ₹66.90*
+                  ₹66.90*
                 </Typography>
               </CardContent>
               <CardActions>
@@ -266,10 +268,10 @@ function Product() {
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                Alkof Dx Bottle Of 100ml Syrup
+                  Alkof Dx Bottle Of 100ml Syrup
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                ₹84.00
+                  ₹84.00
                 </Typography>
               </CardContent>
               <CardActions>
@@ -290,10 +292,10 @@ function Product() {
               />
               <CardContent>
                 <Typography gutterBottom variant="h6" component="div">
-                Alkof Orange Flavour Bottle Of 100ml Syrup
+                  Alkof Orange Flavour Bottle Of 100ml Syrup
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                ₹69.75
+                  ₹69.75
                 </Typography>
               </CardContent>
               <CardActions>

@@ -11,6 +11,7 @@ import Aboutus from './component/Aboutus';
 import Product from './component/Product';
 import Company from './component/Company';
 import Login from './component/Login';
+import Singin from './component/Singin';
 
  
 
@@ -28,6 +29,8 @@ root.render(
     <Route path='/product' element={<><Product/><Footer/></>}></Route>
     <Route path='/company' element={<><Company/><Footer/></>}></Route>
     <Route path='/login' element={<><Login/></>}></Route>
+    <Route path='/signin' element={<><Singin/></>}></Route>
+   
     <Route path='/*' element={<p>No route is available</p>}/>
   </Routes>
 <Outlet/>
