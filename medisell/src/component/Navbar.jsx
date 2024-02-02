@@ -8,7 +8,7 @@ import logo from '/Users/shekhargupta/Desktop/medi_sell/medisell/src/image/logo.
 function Navbar() {
   return (
     <>
-   <nav className='nav'>
+   <nav className='nav' style={{width:"100%",height:"100%"}}>
     {/* Image */}
     <img style={{ height:'7vh', width:'7vh',marginTop:"1vh", marginLeft:'1vh' }}  src={logo} alt=""  />
     <ul className='navcon' style={{marginLeft:'45vh'}}>

@@ -12,6 +12,7 @@ import Product from './component/Product';
 import Company from './component/Company';
 import Login from './component/Login';
 import Singin from './component/Singin';
+import SliderComponent from './component/SliderComponent'
 
  
 
@@ -23,8 +24,8 @@ root.render(
   <Navbar/>
   <Routes>
   
-    <Route path='/home' element={<><Body/><Card1/><Footer/></>}/> 
-    <Route path='/' element={<><Body/><Card1/><Footer/></>}/>
+    <Route path='/home' element={<><Body/><SliderComponent/><Footer/></>}/> 
+    <Route path='/' element={<><Body/><SliderComponent/><Footer/></>}/>
     <Route path='/aboutus' element={<Aboutus/>}></Route>
     <Route path='/product' element={<><Product/><Footer/></>}></Route>
     <Route path='/company' element={<><Company/><Footer/></>}></Route>

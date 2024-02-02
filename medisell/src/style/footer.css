@@ -1,5 +1,7 @@
 .footer{
     background: white;
+    /* bottom: 0;
+    position: fixed; */
 }
 .foot{
     display: grid;

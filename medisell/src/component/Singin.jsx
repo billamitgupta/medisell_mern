@@ -1,14 +1,16 @@
 import React from "react";
 
 import Grid from "@mui/material/Unstable_Grid2";
+import { colors } from "@mui/material";
 
 function Singin() {
   return (
-
     
-      <div>
+   
+      <div style={{background:
+      "radial-gradient(243.55% 153.69% at 23.48% -1.07%, #EBF3F5 10.46%, #C5E2F0 100%)" ,height:"100%",paddingBottom:"17vh"}}>
         <div>
-          <form action="" style={{ padding: "3vh" }}>
+          <form action="" style={{ paddingTop: "6vh", marginLeft: "6vh" }}>
             <label htmlFor="username" style={{ padding: "1vh" }}>
               Enter your Name
               <br />
@@ -18,7 +20,7 @@ function Singin() {
                 style={{
                   border: "1px ",
                   margin: "1vh",
-                  borderRadius: "2vh",
+                  borderRadius: "1.5vh",
                   background: "#B4D8E4",
                   height: "5vh",
                   width: "40vh",
@@ -35,7 +37,7 @@ function Singin() {
                 style={{
                   border: "1px",
                   margin: "1vh",
-                  borderRadius: "2vh",
+                  borderRadius: "1.5vh",
                   background: "#B4D8E4",
                   height: "5vh",
                   width: "40vh",
@@ -52,7 +54,7 @@ function Singin() {
                 style={{
                   border: "1px ",
                   margin: "1vh",
-                  borderRadius: "2vh",
+                  borderRadius: "1.5vh",
                   background: "#B4D8E4",
                   height: "5vh",
                   width: "40vh",
@@ -69,7 +71,7 @@ function Singin() {
                 style={{
                   border: "1px",
                   margin: "1vh",
-                  borderRadius: "2vh",
+                  borderRadius: "1.5vh",
                   background: "#B4D8E4",
                   height: "5vh",
                   width: "40vh",
@@ -77,15 +79,26 @@ function Singin() {
               />
             </label>
             <br />
-            <div style={{marginTop:"3vh"}}>
-            <label htmlFor="" style={{marginLeft:"2vh",paddingTop:"4vh", color:"#B4D8E4"}}>
-                Select 
-                <select name="Type" id="" style={{marginLeft:"2vh", color:"black", width:"25vh"}}>
-                    <option value="retailer">Retailer</option>
-                    <option value="Wholesale">WholeSale</option>
-                    <option value="company">Company</option>
+            <div style={{ marginTop: "3vh" }}>
+              <label
+                htmlFor=""
+                style={{
+                  marginLeft: "2vh",
+                  paddingTop: "4vh",
+                  color: "#B4D8E4",
+                }}
+              >
+                Select
+                <select
+                  name="Type"
+                  id=""
+                  style={{ marginLeft: "2vh", color: "black", width: "25vh" }}
+                >
+                  <option value="retailer">Retailer</option>
+                  <option value="Wholesale">WholeSale</option>
+                  <option value="company">Company</option>
                 </select>
-            </label>
+              </label>
             </div>
             <br />
             <label
@@ -118,7 +131,7 @@ function Singin() {
           </form>
         </div>
       </div>
-   
+    
   );
 }
 
