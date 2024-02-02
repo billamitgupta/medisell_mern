@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import '@fontsource/roboto/300.css';
@@ -11,7 +11,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import Grid from '@mui/material/Unstable_Grid2'; // Grid 
+ 
 
 // Import Swiper styles
 import '/Users/shekhargupta/Desktop/medi_sell/medisell/src/style/slidercomponent.css';
