@@ -2,11 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 
-import { BrowserRouter,Route,Routes,Outlet, Link } from 'react-router-dom'; 
+import { BrowserRouter,Route,Routes,Outlet } from 'react-router-dom'; 
 import Navbar from './component/Navbar';
 import Footer from './component/Footer';
 import Body from './component/Body';
-import Card1 from './component/Card1';
+
 import Aboutus from './component/Aboutus';
 import Product from './component/Product';
 import Company from './component/Company';
