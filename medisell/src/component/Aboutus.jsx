@@ -1,5 +1,5 @@
 import React from 'react'
-import image1 from '/Users/shekhargupta/Desktop/medi_sell/medisell/src/image/f97fbe3c-7b04-4505-ae8e-420ca2026567.jpeg'
+import image1 from '../image/f97fbe3c-7b04-4505-ae8e-420ca2026567.jpeg'
 
 
 export default function Aboutus() {

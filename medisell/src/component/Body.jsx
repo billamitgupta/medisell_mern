@@ -22,11 +22,11 @@ export default function Body() {
   };
   return (
     <>
-      <Swiper
+      <div className='m-8 rounded- hover:m-3 hover:border-solid  shadow-xl'><Swiper
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
-          delay: 3000,
+          delay: 3000000,
           disableOnInteraction: false,
         }}
         pagination={{
@@ -38,21 +38,21 @@ export default function Body() {
         className="mySwiper"
       >
         <SwiperSlide><img src='https://consumer-app-images.pharmeasy.in/marketing/comp_india_covered.jpg' alt='image1'></img></SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
+        <SwiperSlide><img src='https://cms-contents.pharmeasy.in/banner/810889b6613-babycare-min.png?dim=700x0&dpr=1&q=100' alt='image1'></img></SwiperSlide>
+        <SwiperSlide><img src='https://cms-contents.pharmeasy.in/banner/ed87375d79f-DiabeticCare-min.png' alt='image1'></img></SwiperSlide>
+        <SwiperSlide><img src='https://cms-contents.pharmeasy.in/banner/03b538c95bb-abcfd6435fe-FragSB.jpeg' alt='image1'></img></SwiperSlide>
+        <SwiperSlide><img src='https://cms-contents.pharmeasy.in/banner/041c47e32a2-CB_Beauty.jpg' alt='image1'></img></SwiperSlide>
+        <SwiperSlide><img src='https://cms-contents.pharmeasy.in/banner/cea76587546-Personal-care_c.jpg' alt='image1'></img></SwiperSlide>
+        <SwiperSlide><img src='https://cms-contents.pharmeasy.in/banner/8b30e5c1ffd-Celevida.png' alt='image1'></img></SwiperSlide>
+        <SwiperSlide><img src='https://cms-contents.pharmeasy.in/banner/26e74905fde-d91d8a17483-b80e93634e8-Now-never_CB.jpg' alt='image1'></img></SwiperSlide>
+        <SwiperSlide><img src='https://cms-contents.pharmeasy.in/banner/9b42ab4d9ab-home-page-banner_nutrition-.jpg' alt='image1'></img></SwiperSlide>
         <div className="autoplay-progress" slot="container-end">
           <svg viewBox="0 0 48 48" ref={progressCircle}>
             <circle cx="24" cy="24" r="20"></circle>
           </svg>
           <span ref={progressContent}></span>
         </div>
-      </Swiper>
+      </Swiper></div>
     </>
   );
 }

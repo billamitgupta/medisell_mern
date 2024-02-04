@@ -14,13 +14,13 @@ import Grid from '@mui/material/Unstable_Grid2'; // Grid version 2
 function Card1(){
     return(
       <div className='div'>
-        <Grid container spacing={1}>
+        <Grid container spacing={6}>
         <Grid xs={4} md={4}> 
         <div>
  
-        <Card sx={{ maxWidth: 300,  margin:5,}}>
+        <Card sx={{ maxWidth: 150,  margin:5,}}>
       <CardMedia
-        sx={{ height: 200, width: 200, marginLeft:5,}}
+        sx={{ height: 150, width: 150, marginLeft:5,}}
         image="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/f10917087a483040b557e4b18204312c.png"
         title="green iguana" className='image'
       />
@@ -44,7 +44,7 @@ function Card1(){
         <Card sx={{ maxWidth: 300,  margin:5,}}>
         
       <CardMedia
-        sx={{ height: 200, width: 200, marginLeft:5,}}
+        sx={{ height: 200, width: 300, marginLeft:5,}}
         image="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/fa936f30b4563fc4abd187fb22fe5258.png"
         title="green iguana" className='image'
       />
@@ -67,7 +67,30 @@ function Card1(){
         <div>
         <Card sx={{ maxWidth: 300,  margin:5,}}>
       <CardMedia
-        sx={{ height: 200, width: 200, marginLeft:5,}}
+        sx={{ height: 200, width: 300, marginLeft:5,}}
+        image="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/9cc9a28ea4513009966cae794114eefd.png"
+        title="green iguana" className='image'
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          Medicine
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+         Get your medicine in bulk at awesome price and discount 
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button size="small">Share</Button>
+        <Button size="small">Learn More</Button>
+      </CardActions>
+    </Card>
+    </div>
+    </Grid>
+        <Grid xs={4} md={4}> 
+        <div>
+        <Card sx={{ maxWidth: 300,  margin:5,}}>
+      <CardMedia
+        sx={{ height: 200, width: 300, marginLeft:5,}}
         image="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/9cc9a28ea4513009966cae794114eefd.png"
         title="green iguana" className='image'
       />

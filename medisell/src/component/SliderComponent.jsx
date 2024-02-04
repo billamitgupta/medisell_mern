@@ -55,8 +55,8 @@ export default function slidercompont() {
         <SwiperSlide><Card sx={{ maxWidth: 300,  margin:5,}}>
         
         <CardMedia
-          sx={{ height: 200, width: 200, marginLeft:5,}}
-          image="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/fa936f30b4563fc4abd187fb22fe5258.png"
+          sx={{ height: 200, width: 120, marginLeft:5,}}
+          image="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/f10917087a483040b557e4b18204312c.png"
           title="green iguana" className='image'
         />
         <CardContent>
@@ -75,7 +75,7 @@ export default function slidercompont() {
         <SwiperSlide><Card sx={{ maxWidth: 300,  margin:5,}}>
         
         <CardMedia
-          sx={{ height: 200, width: 200, marginLeft:5,}}
+          sx={{ height: 200, width: 120, marginLeft:5,}}
           image="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/fa936f30b4563fc4abd187fb22fe5258.png"
           title="green iguana" className='image'
         />
@@ -92,9 +92,9 @@ export default function slidercompont() {
           <Button size="small">Learn More</Button>
         </CardActions>
       </Card></SwiperSlide>
-        <SwiperSlide><Card sx={{ maxWidth: 300,  margin:5,}}>
+        <SwiperSlide><Card sx={{ maxWidth: 300, maxHeight: 500,  margin:5,}}>
       <CardMedia
-        sx={{ height: 200, width: 200, marginLeft:5,}}
+        sx={{ height: 180, width: 200, marginLeft:1,}}
         image="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/9cc9a28ea4513009966cae794114eefd.png"
         title="green iguana" className='image'
       />
@@ -111,12 +111,120 @@ export default function slidercompont() {
         <Button size="small">Learn More</Button>
       </CardActions>
     </Card></SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
+        <SwiperSlide>   <SwiperSlide><Card sx={{ maxWidth: 300, maxHeight: 500,  margin:5,}}>
+      <CardMedia
+        sx={{ height: 180, width: 200, marginLeft:1,}}
+        image="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/9cc9a28ea4513009966cae794114eefd.png"
+        title="green iguana" className='image'
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          Medicine
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+         Get your medicine in bulk at awesome price and discount 
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button size="small">Share</Button>
+        <Button size="small">Learn More</Button>
+      </CardActions>
+    </Card></SwiperSlide></SwiperSlide>
+        <SwiperSlide>   <SwiperSlide><Card sx={{ maxWidth: 300, maxHeight: 500,  margin:5,}}>
+      <CardMedia
+        sx={{ height: 180, width: 200, marginLeft:1,}}
+        image="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/9cc9a28ea4513009966cae794114eefd.png"
+        title="green iguana" className='image'
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          Medicine
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+         Get your medicine in bulk at awesome price and discount 
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button size="small">Share</Button>
+        <Button size="small">Learn More</Button>
+      </CardActions>
+    </Card></SwiperSlide></SwiperSlide>
+        <SwiperSlide>   <SwiperSlide><Card sx={{ maxWidth: 300, maxHeight: 500,  margin:5,}}>
+      <CardMedia
+        sx={{ height: 180, width: 200, marginLeft:1,}}
+        image="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/9cc9a28ea4513009966cae794114eefd.png"
+        title="green iguana" className='image'
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          Medicine
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+         Get your medicine in bulk at awesome price and discount 
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button size="small">Share</Button>
+        <Button size="small">Learn More</Button>
+      </CardActions>
+    </Card></SwiperSlide></SwiperSlide>
+        <SwiperSlide>   <SwiperSlide><Card sx={{ maxWidth: 300, maxHeight: 500,  margin:5,}}>
+      <CardMedia
+        sx={{ height: 180, width: 200, marginLeft:1,}}
+        image="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/9cc9a28ea4513009966cae794114eefd.png"
+        title="green iguana" className='image'
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          Medicine
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+         Get your medicine in bulk at awesome price and discount 
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button size="small">Share</Button>
+        <Button size="small">Learn More</Button>
+      </CardActions>
+    </Card></SwiperSlide></SwiperSlide>
+        <SwiperSlide>   <SwiperSlide><Card sx={{ maxWidth: 300, maxHeight: 500,  margin:5,}}>
+      <CardMedia
+        sx={{ height: 180, width: 200, marginLeft:1,}}
+        image="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/9cc9a28ea4513009966cae794114eefd.png"
+        title="green iguana" className='image'
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          Medicine
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+         Get your medicine in bulk at awesome price and discount 
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button size="small">Share</Button>
+        <Button size="small">Learn More</Button>
+      </CardActions>
+    </Card></SwiperSlide></SwiperSlide>
+        <SwiperSlide>   <SwiperSlide><Card sx={{ maxWidth: 300, maxHeight: 500,  margin:5,}}>
+      <CardMedia
+        sx={{ height: 180, width: 200, marginLeft:1,}}
+        image="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/9cc9a28ea4513009966cae794114eefd.png"
+        title="green iguana" className='image'
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          Medicine
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+         Get your medicine in bulk at awesome price and discount 
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button size="small">Share</Button>
+        <Button size="small">Learn More</Button>
+      </CardActions>
+    </Card></SwiperSlide></SwiperSlide>
       </Swiper>
     </>
   );
