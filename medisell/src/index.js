@@ -13,6 +13,8 @@ import Company from './component/Company';
 import Login from './component/Login';
 import Singin from './component/Singin';
 import SliderComponent from './component/SliderComponent'
+import Category from './component/Category';
+import Healthcare from './component/Healthcare';
 
  
 
@@ -24,11 +26,11 @@ root.render(
   <Navbar/>
   <Routes>
   
-    <Route path='/home' element={<><Body/><SliderComponent/><Footer/></>}/> 
-    <Route path='/' element={<><Body/><SliderComponent/><Footer/></>}/>
+    <Route path='/home' element={<><Body/><Category/><SliderComponent/><Footer/></>}/> 
+    <Route path='/' element={<><Body/><Category/><SliderComponent/><Footer/></>}/>
     <Route path='/aboutus' element={<Aboutus/>}></Route>
     <Route path='/product' element={<><Product/><Footer/></>}></Route>
-    <Route path='/company' element={<><Company/><Footer/></>}></Route>
+    <Route path='/company' element={<><Body/><Healthcare/><Footer/></>}></Route>
     <Route path='/login' element={<><Login/></>}></Route>
     <Route path='/signin' element={<><Singin/></>}></Route>
    

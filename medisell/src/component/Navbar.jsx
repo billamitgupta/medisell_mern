@@ -8,24 +8,24 @@ import logo from '../../src/image/logo.gif'
 function Navbar() {
   return (
     < >
-   <nav className='display: flex  md: bg-violet-300 rounded-md ' >
+   <nav className='w-full h-16 bg-gradient-to-r from-indigo-500 flex iteam-center justify-between px-4 md:px4 ' >
     {/* Image */}
     <img className='h-12  flex  justify-start '  src={logo} alt=""  />
-    <ul className='display: flex  justify-center lg:mx-72 md:mx-52 text-lg text-sky-700 mt-3 ' >
-        <li className='text-1xl font-sans'><Link to="/">Home</Link></li>
-        <li><Link to="/product">Company</Link></li>
-        <li><Link to="/product">Product</Link></li>
-        <li><Link to="/aboutus">AboutUs</Link></li>
+    <ul className='md:flex hidden font-semibold mt-5 pr-10' >
+        <li className='mx-[10px] cursor-pointer text-xl text-black dark:text-sky-700'><Link to="/">Home</Link></li>
+        <li className='mx-[10px] cursor-pointer text-xl text-black dark:text-sky-700'><Link to="/company">Company</Link></li>
+        <li className='mx-[10px] cursor-pointer text-xl text-black dark:text-sky-700'><Link to="/product">Product</Link></li>
+        <li className='mx-[10px] cursor-pointer text-xl text-black dark:text-sky-700'><Link to="/aboutus">AboutUs</Link></li>
     </ul>
    <div className='my-2  display:flex justify-end flex   '>
    <div>
    <Link to="/signin"> <Button  variant="contained" disableElevation>
-      SignIn
+      SignIn/Login
     </Button></Link>
    </div>
-    <div className='px-5'><Link to="/login"><Button   variant="contained" disableElevation>
-      Login
-    </Button></Link></div>
+    {/* <div>
+      <Link><li className='4xl' >&#8801; </li></Link>
+    </div> */}
    </div>
    </nav>
    <Outlet/>
