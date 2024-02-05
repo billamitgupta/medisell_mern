@@ -22,11 +22,11 @@ export default function Body() {
   };
   return (
     <>
-      <div className='m-8 rounded- hover:m-3 hover:border-solid  shadow-xl'><Swiper
+      <div className='m-8 rounded-sm hover:m-3 hover:border-solid  shadow-xl bg-slate-700 '><Swiper
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
-          delay: 3000000,
+          delay: 30000,
           disableOnInteraction: false,
         }}
         pagination={{
