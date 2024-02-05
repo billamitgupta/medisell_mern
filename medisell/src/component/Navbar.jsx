@@ -2,7 +2,7 @@ import React from 'react'
 import '../style/navbar.css'
 import Button from '@mui/material/Button';
 import { Outlet,Link } from 'react-router-dom'
-import logo from '../image/logo.gif'
+import logo from '../../src/image/logo.gif'
 
 
 function Navbar() {
