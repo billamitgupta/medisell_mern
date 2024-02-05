@@ -1,9 +1,20 @@
-import React from 'react'
+import React,{useRef} from 'react'
 import '../style/footer.css'
 
+
+
+    
+
+
 function Footer() {
+
+    const focusValue = useRef(null);
+
+    const onClick =()=>{
+        focusValue.current.focus();
+    };
   return (
-    <div className='footer'>
+    <div className='foooter'>
       
         <div className='foot'>     
         
@@ -12,6 +23,7 @@ function Footer() {
             <div className='und'></div>
             <div>
                 <p className='p_footer'>About US</p>
+                <p><button onClick={onClick}>Product</button></p>
                 <p className='p_footer'>FAQs</p>
                 <p className='p_footer'>Privacy Policy</p>
             </div>
@@ -41,4 +53,7 @@ function Footer() {
   )
 }
 
-export default Footer
+
+export default Footer;
+
+//export const value = {userName:["amit","hritik"]};

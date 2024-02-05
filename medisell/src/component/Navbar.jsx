@@ -8,16 +8,16 @@ import logo from '../../src/image/logo.gif'
 function Navbar() {
   return (
     < >
-   <nav className='display: flex bg-violet-300 rounded-md w-full ' >
+   <nav className='display: flex  md: bg-violet-300 rounded-md ' >
     {/* Image */}
-    <img style={{ height:'7vh', width:'7vh',marginTop:"1vh", marginLeft:'1vh' }}  src={logo} alt=""  />
-    <ul className='display: flex text-lg text-sky-700 mt-3 decoration-8 md:w-2/4' style={{marginLeft:'45vh'}}>
+    <img className='h-12  flex  justify-start '  src={logo} alt=""  />
+    <ul className='display: flex  justify-center lg:mx-72 md:mx-52 text-lg text-sky-700 mt-3 ' >
         <li className='text-1xl font-sans'><Link to="/">Home</Link></li>
         <li><Link to="/product">Company</Link></li>
         <li><Link to="/product">Product</Link></li>
         <li><Link to="/aboutus">AboutUs</Link></li>
     </ul>
-   <div className='my-2 px-28 display: flex md:w-2/4 '>
+   <div className='my-2  display:flex justify-end flex   '>
    <div>
    <Link to="/signin"> <Button  variant="contained" disableElevation>
       SignIn

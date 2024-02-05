@@ -10,8 +10,8 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
- 
+import Typography from '@mui/material/Typography'; 
+// import {value} from '../component/Footer';
 
 // Import Swiper styles
 import '/Users/shekhargupta/Desktop/medi_sell/medisell/src/style/slidercomponent.css';
@@ -25,11 +25,14 @@ import { Pagination } from 'swiper/modules';
 export default function slidercompont() {
   return (
     <>
+      <div >
+      {/* {console.log(value)} */}
       <Swiper
         slidesPerView={1}
         spaceBetween={10}
         pagination={{
           clickable: true,
+          
         }}
         breakpoints={{
           '@0.00': {
@@ -226,6 +229,7 @@ export default function slidercompont() {
       </CardActions>
     </Card></SwiperSlide></SwiperSlide>
       </Swiper>
+      </div>
     </>
   );
 }
