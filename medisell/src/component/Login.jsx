@@ -1,7 +1,7 @@
 import React from "react";
 import logi from "../../src/image/e371b4da-02a5-403c-8ca7-59b217a10216.jpeg";
 import Grid from "@mui/material/Unstable_Grid2";
-import "../style/login.css";
+import "../../src/style/login.css";
 
 function Login() {
   return (
