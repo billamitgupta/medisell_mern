@@ -9,7 +9,7 @@ import Body from './component/Body';
 
 import Aboutus from './component/Aboutus';
 import Product from './component/Product';
-import Company from './component/Company';
+// import Company from './component/Company';
 import Login from './component/Login';
 import Singin from './component/Singin';
 import SliderComponent from './component/SliderComponent'

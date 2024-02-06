@@ -14,7 +14,7 @@ import Typography from '@mui/material/Typography';
 // import {value} from '../component/Footer';
 
 // Import Swiper styles
-import '/Users/shekhargupta/Desktop/medi_sell/medisell/src/style/slidercomponent.css';
+import '../../src/style/slidercomponent.css';
 import 'swiper/css/pagination';
 
 import 'swiper/css';
