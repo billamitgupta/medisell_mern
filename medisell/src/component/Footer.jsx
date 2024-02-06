@@ -1,4 +1,4 @@
-import React,{useRef} from 'react'
+import React,{} from 'react'
 import '../style/footer.css'
 
 
@@ -8,11 +8,11 @@ import '../style/footer.css'
 
 function Footer() {
 
-    const focusValue = useRef(null);
+    // const focusValue = useRef(null);
 
-    const onClick =()=>{
-        focusValue.current.focus();
-    };
+    // const onClick =()=>{
+    //     focusValue.current.focus();
+    // };
   return (
     <div className=' bg-white dark:bg-slate-800 text-slate-400'>
       
