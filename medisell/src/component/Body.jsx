@@ -22,7 +22,7 @@ export default function Body() {
   };
   return (
     <>
-      <div className='m-8 rounded-sm hover:m-3 hover:border-solid  shadow-xl bg-slate-700 '><Swiper
+      <div className='m-8 rounded-sm hover:m-3 bg-slate-700  shadow-xl  '><Swiper
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{

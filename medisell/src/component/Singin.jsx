@@ -1,8 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 
 
 function Singin() {
+
+  
   return (
     
    
@@ -125,8 +128,7 @@ function Singin() {
                 marginTop: "8vh",
               }}
             />
-            <input type="button" value="" style={{ marginLeft: "6vh" }} />
-            Signin
+            <Link to="/login"> <input type="button" value="" style={{ marginLeft: "6vh" }} />Login</Link>
           </form>
         </div>
       </div>
