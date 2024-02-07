@@ -2,10 +2,14 @@ const { MongoClient } = require("mongodb");
 const mongoose = require("mongoose");
 
 const express = require("express")
-const app =express()
+const cors = require("cors");
+require("dotenv").config();
+const app = express();
+const port = process.env.PORT;
 app.use(express.json());
+app.use(cors());
 
-const uri = "mongodb://127.0.0.1/";
+const uri = "mongodb+srv://bill:HVai2JLkfbG5ljxG@medisell.uhzwqm8.mongodb.net/";
 const client = new MongoClient(uri);
 
 mongoose
@@ -61,32 +65,32 @@ const StudentSchema = new Schema({
 //   };
 
   // Create a model
-const student = mongoose.model("student", StudentSchema);
+// const student = mongoose.model("student", StudentSchema);
 
-  const user1 = new student({
-    uid: 101,
-    sem1: 7.0,
-    sem2: 6.8,
-    cgpa: 6.9,
-  });
-  const user2 = new student({
-    uid: 102,
-    sem1: 8.0,
-    sem2: 6.8,
-    cgpa: 7.9,
-  });
-  const user3 = new student({
-    uid: 103,
-    sem1: 5.0,
-    sem2: 2.8,
-    cgpa: 3.9,
-  });
-  const user4 = new student({
-    uid: 104,
-    sem1: 4.0,
-    sem2: 5.8,
-    cgpa: 4.9,
-  });
+//   const user1 = new student({
+//     username: 101,
+//     password: 7.0,
+//     sem2: 6.8,
+//     cgpa: 6.9,
+//   });
+//   const user2 = new student({
+//     uid: 102,
+//     sem1: 8.0,
+//     sem2: 6.8,
+//     cgpa: 7.9,
+//   });
+//   const user3 = new student({
+//     uid: 103,
+//     sem1: 5.0,
+//     sem2: 2.8,
+//     cgpa: 3.9,
+//   });
+//   const user4 = new student({
+//     uid: 104,
+//     sem1: 4.0,
+//     sem2: 5.8,
+//     cgpa: 4.9,
+//   });
 
   const addUsersToDB = async () => {
     try {
@@ -109,20 +113,20 @@ const student = mongoose.model("student", StudentSchema);
     res.json(student.user1);
    })
 
-// app.get("/student", async (req, res) => {
-//     try {
-//       const doc = await student.findOne();
-//       res.json(doc.cse);
-//     } catch (error) {
-//       res.status(500).send(error);
-//     }
-//   });
+app.get("/product", async (req, res) => {
+    try {
+      const doc = await student.findOne();
+      res.json(doc.cse);
+    } catch (error) {
+      res.status(500).send(error);
+    }
+  });
 
 
 
-  const PORT = 3000;
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+  
+app.listen(port, () => {
+  console.log(`Server running on port ${port}`);
 });
 
   
