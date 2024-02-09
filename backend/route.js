@@ -67,7 +67,7 @@ const userSchema = new mongoose.Schema({
 const UserModel = mongoose.model('User', userSchema);
 
 // API endpoint for posting user data
-app.post('/singin', async (req, res) => {
+app.post('/signin', async (req, res) => {
   try {
     const newUser = new UserModel(req.body);
     await newUser.save();
