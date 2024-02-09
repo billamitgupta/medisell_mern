@@ -11,7 +11,7 @@ app.use(cors());
 app.use(express.json());
 
 // MongoDB connection
-const uri = process.env.MONGO_URI;
+const uri = "mongodb+srv://bill:HVai2JLkfbG5ljxG@medisell.uhzwqm8.mongodb.net/medisell";
 mongoose.connect(uri);
 const connection = mongoose.connection;
 
@@ -67,7 +67,7 @@ const userSchema = new mongoose.Schema({
 const UserModel = mongoose.model('User', userSchema);
 
 // API endpoint for posting user data
-app.post('/signin', async (req, res) => {
+app.post('/singin', async (req, res) => {
   try {
     const newUser = new UserModel(req.body);
     await newUser.save();
