@@ -21,7 +21,7 @@ function Card1(){
         <Card sx={{ maxWidth: 150,  margin:5,}}>
       <CardMedia
         sx={{ height: 150, width: 150, marginLeft:5,}}
-        image="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/f10917087a483040b557e4b18204312c.png"
+        image="https://assets.truemeds.in/Images/dwebbanner1.jpeg?tr=cm-pad_resize,bg-FFFFFF,lo-true,w-724"
         title="green iguana" className='image'
       />
       <CardContent>
