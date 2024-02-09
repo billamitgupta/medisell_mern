@@ -6,13 +6,14 @@ import "../../src/style/login.css";
 function Login() {
   return (
     <body>
-      <div className="loginBody">
+      <div className="loginBody w-screen h-screen">
         <div
+        className="  w-9/12 ml-36 mt-24 rounded-2xl border-4 bg-"
           style={{
-            width: "110vh",
-            padding: "2vh",
-            border: "2px solid",
-            borderRadius: "2vh",
+            
+            
+            
+            
             background:
               "radial-gradient(243.55% 153.69% at 23.48% -1.07%, #EBF3F5 10.46%, #C5E2F0 100%)",
           }}

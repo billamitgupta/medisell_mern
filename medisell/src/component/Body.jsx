@@ -26,7 +26,7 @@ export default function Body() {
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
-          delay: 30000,
+          delay: 3000,
           disableOnInteraction: false,
         }}
         pagination={{
@@ -37,7 +37,7 @@ export default function Body() {
         onAutoplayTimeLeft={onAutoplayTimeLeft}
         className="mySwiper"
       >
-        <SwiperSlide><img src='https://consumer-app-images.pharmeasy.in/marketing/comp_india_covered.jpg' alt='image1'></img></SwiperSlide>
+        <SwiperSlide><img src='https://assets.truemeds.in/Images/dwebbanner1.jpeg?tr=cm-pad_resize,bg-FFFFFF,lo-true,w-724' alt='image1'></img></SwiperSlide>
         <SwiperSlide><img src='https://cms-contents.pharmeasy.in/banner/810889b6613-babycare-min.png?dim=700x0&dpr=1&q=100' alt='image1'></img></SwiperSlide>
         <SwiperSlide><img src='https://cms-contents.pharmeasy.in/banner/ed87375d79f-DiabeticCare-min.png' alt='image1'></img></SwiperSlide>
         <SwiperSlide><img src='https://cms-contents.pharmeasy.in/banner/03b538c95bb-abcfd6435fe-FragSB.jpeg' alt='image1'></img></SwiperSlide>

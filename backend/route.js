@@ -11,7 +11,7 @@ app.use(cors());
 app.use(express.json());
 
 // MongoDB connection
-const uri = "mongodb+srv://bill:HVai2JLkfbG5ljxG@medisell.uhzwqm8.mongodb.net/medisell";
+const uri = process.env.MONGO_URI;
 mongoose.connect(uri);
 const connection = mongoose.connection;
 
@@ -55,6 +55,35 @@ app.get("/product/:courseName", async (req, res) => {
   }
 });
 
+const userSchema = new mongoose.Schema({
+  name: String,
+  dob: Date,
+  username: String,
+  password: String,
+  userType: String,
+  acceptedTC: Boolean,
+});
+
+const UserModel = mongoose.model('User', userSchema);
+
+// API endpoint for posting user data
+app.post('/signin', async (req, res) => {
+  try {
+    const newUser = new UserModel(req.body);
+    await newUser.save();
+    res.status(201).json({ message: 'User registered successfully' });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: 'Internal Server Error' });
+  }
+});
+
+
+// const User = mongoose.model("user", productSchema);
+// app.post("/sigin", (req, res) => {
+//   User.push(req.body);
+//   res.send("Course added");
+// });
 
 // app.post("/product", async (req, res) => {
 //   try {
@@ -69,25 +98,27 @@ app.get("/product/:courseName", async (req, res) => {
 // Assuming you already have the Product model and mongoose connection
 
 // Define API routes
-app.post("/product", async (req, res) => {
-  try {
-    // Assuming you have a Product model defined using mongoose
-    const newProduct = new Product({
-      product_name: req.body.product_name,
-      product_price: req.body.product_price,
-      product_manufactured: req.body.product_manufactured,
-      medicine_desc: req.body.medicine_desc,
-    });
+// app.post("/singin", async (req, res) => {
+//   try {
+//     // Assuming you have a Product model defined using mongoose
+//     const newUser = new User({
+//       name: req.body.name,
+//       dob: req.body.dob,
+//       username: req.body.username,
+//       select: req.body.select,
+//       password:req.body.password,
+//       checkbox:req.body.checkbox,
+//     });
 
-    // Save the new product to the "product" collection
-    await newProduct.save();
+//     // Save the new product to the "product" collection
+//     await newUser.save();
 
-    res.status(201).send("Product added successfully");
-  } catch (error) {
-    console.error('Error adding product:', error);
-    res.status(500).send(error);
-  }
-});
+//     res.status(201).send("Product added successfully");
+//   } catch (error) {
+//     console.error('Error adding product:', error);
+//     res.status(500).send(error);
+//   }
+// });
 
 
 // Start the server
