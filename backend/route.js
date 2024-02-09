@@ -11,7 +11,7 @@ app.use(cors());
 app.use(express.json());
 
 // MongoDB connection
-const uri = "mongodb+srv://bill:HVai2JLkfbG5ljxG@medisell.uhzwqm8.mongodb.net/medisell";
+const uri = process.env.MONGO_URI;
 mongoose.connect(uri);
 const connection = mongoose.connection;
 
