@@ -68,7 +68,7 @@ function Product({product_name}) {
      
       <div className="grid grid-cols-5 gap-6 rounded-lg  ">
       {currentProducts.map((product_name) => (
-            <div key={product_name.product_name} className="h-fit w-fit m-5  rounded-lg  dark:bg-600 shadow-md hover: hover:w-36 mb-4">
+            <div key={product_name.product_name} className="h-92 w-fit m-5  rounded-lg  dark:bg-600 shadow-md hover: hover:w-52 mb-4">
               <img src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/f10917087a483040b557e4b18204312c.png" alt="" />
             <p className="text-md px-2 font-medium text-slate-500">{product_name.product_name}</p>
             <p className="text-green-500 px-2 mt-2">{product_name.product_price}</p>
