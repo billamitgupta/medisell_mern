@@ -12,6 +12,10 @@
  - https://www.figma.com/file/gRWRdXCtDY4HhZ7VPHSpJK/Untitled?type=design&node-id=0%3A1&mode=design&t=Z2wG9VhEjHzW8nV4-1
 # Deploy Link
   - https://medi-sell.netlify.app
+
+# video
+[![Watch the video](https://drive.google.com/file/d/1k6cGAT9WNQ6wiubsbKXYdSIPc0Eotbf8/view?usp=sharing)](https://drive.google.com/file/d/1k6cGAT9WNQ6wiubsbKXYdSIPc0Eotbf8/view?usp=sharing)
+
  ## Which problem Project is Solving?
   - Business-to-business deals
   - Logistics issues 
