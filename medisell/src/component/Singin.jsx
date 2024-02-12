@@ -35,7 +35,7 @@ function Singin() {
 
 
       // Send a POST request to add a new course using Axios
-      axios.post('http://localhost:8000/signin', userData)
+      axios.post('https://medisell.onrender.com/signin', userData)
         .then((response) => {
           // Successful response handling
           console.log('Course added successfully.');

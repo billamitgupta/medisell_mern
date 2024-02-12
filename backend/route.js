@@ -32,7 +32,7 @@ const productSchema = new mongoose.Schema({
 const Product = mongoose.model("product", productSchema);
 
 // Define API routes 
-app.get("https://medisell.onrender.com/product", async (req, res) => {
+app.get("/product", async (req, res) => {
   try {
     const product = await Product.find();
     res.json(product);
@@ -67,7 +67,7 @@ const userSchema = new mongoose.Schema({
 const UserModel = mongoose.model('User', userSchema);
 
 // API endpoint for posting user data
-app.post('https://medisell.onrender.com/signin', async (req, res) => {
+app.post('/signin', async (req, res) => {
   try {
     const newUser = new UserModel(req.body);
     await newUser.save();
@@ -123,7 +123,7 @@ app.post('https://medisell.onrender.com/signin', async (req, res) => {
 
 // Start the server
 app.listen(port, () => {
-  console.log(`Server is running on https://medisell.onrender.com:${port}`);
+  console.log(`Server is running on http://localhost:${port}`);
 });
 
 
