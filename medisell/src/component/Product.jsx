@@ -2,12 +2,14 @@ import React from "react";
 import { useEffect,useState } from "react";
 import axios from 'axios'
 import { Pagination, Stack} from '@mui/material';
+import '../style/loader.css'
 
 
 function Product({product_name}) {
   const [products, setProduct] = useState([]);
   const itemsPerPage = 20 ;  // Number of items to display per page
   const [currentPage, setCurrentPage] = useState(1);
+  const [loading, setLoading] = useState(true);
   // const [open, setOpen] = React.useState(false);
 
   useEffect(() => {
@@ -15,9 +17,11 @@ function Product({product_name}) {
     axios.get("https://medisell.onrender.com/product")
       .then((response) => {
         setProduct(response.data);
+        setLoading(false);
       })
       .catch((error) => {
         console.error(`Error fetching details for frontend:`, error);
+        setLoading(false);
       });
   },[products]);  
 
@@ -59,11 +63,14 @@ function Product({product_name}) {
   if (!products) {
     return <div>Loading...</div>;
   }
+  if (loading) {
+    return <div className="loader w-scrren h-screen"></div>; // Render loader while waiting for data
+  }
   return (
+    
     <div>
       <h1 className=" font-serif h-fit w-screen  text-2xl  bg-gradient-to-r from-lime-200 rounded-xl mt-2 px-4 text-wrap">Product Section</h1>
       <br />
-
      <Stack spacing={2}>
      
       <div className="grid grid-cols-5 gap-6 rounded-lg  ">

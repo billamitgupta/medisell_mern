@@ -14,7 +14,7 @@ function Footer() {
     //     focusValue.current.focus();
     // };
   return (
-    <div className=' bg-white dark:bg-slate-800 text-slate-400 bottom-0'>
+    <div className=' bg-white dark:bg-slate-800 text-slate-400 bottom-0  w-screen'>
       
         <div className=' grid lg:grid-cols-3  md:grid-cols-2 md:grid-rows-2' >     
         
