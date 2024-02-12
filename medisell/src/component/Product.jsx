@@ -12,7 +12,7 @@ function Product({product_name}) {
 
   useEffect(() => {
     // Fetch details of the specific product from the backend
-    axios.get("http://localhost:8000/product")
+    axios.get("https://medisell.onrender.com/product")
       .then((response) => {
         setProduct(response.data);
       })
