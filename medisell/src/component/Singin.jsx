@@ -8,54 +8,92 @@ import axios from "axios";
 function Singin() {
 
   const [userData, setUserData] = useState({
-    name: '',
+    fullname: '',
     dob: '',
     username: '',
     password: '',
     select: 'retailer',
     checkbox: false,
+    avatar: null,
+    coverImage: null, 
   });
 
-    // Handle changes in input fields and update the state
+
     const handleChange = (e) => {
-      const { name, value, type, checked } = e.target;
-      setUserData((prevData) => ({
-        ...prevData,
-        [name]: type === 'checkbox' ? checked : value,
-      }));
+      const { name, value, type, checked, files } = e.target;
+      if (type === 'file') {
+        setUserData((prevData) => ({
+          ...prevData,
+          [name]: files[0], 
+        }));
+      } else {
+        setUserData((prevData) => ({
+          ...prevData,
+          [name]: type === 'checkbox' ? checked : value,
+        }));
+      }
     };
   
-    // Handle form submission
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
       e.preventDefault();
-      console.log('Form submitted:', userData);
-
-    // Display an alert message
-    alert('Form submitted successfully!');
-
-
-      // Send a POST request to add a new course using Axios
-      axios.post('https://medisell.onrender.com/signin', userData)
-        .then((response) => {
-          // Successful response handling
-          console.log('Course added successfully.');
-          // You can redirect to another page or update the UI as needed here
-        })
-        .catch((error) => {
-          // Error handling
-          console.error('Error adding course:', error);
+  
+      if (!userData.avatar) {
+        alert("Avatar is required!");
+        return;
+      }
+  
+      const formData = new FormData();
+      Object.keys(userData).forEach((key) => {
+        formData.append(key, userData[key]);
+      });
+  
+      try {
+        const response = await axios.post('https://0.0.0.0:8000/register', formData, {
+          headers: {
+            "Content-Type": "multipart/form-data",
+          },
         });
+        console.log('User added successfully.', response.data);
+        alert('Form submitted successfully!');
+      } catch (error) {
+        console.error('Error adding user:', error);
+      }
     };
   
   return (
     
    
-      <div style={{background:
-      "radial-gradient(243.55% 153.69% at 23.48% -1.07%, #EBF3F5 10.46%, #C5E2F0 100%) " ,paddingBottom:"17vh"}} className="w-screen h-screen">
-        <div>
-        <form className="responsive-form py-12 px-12" onSubmit={handleSubmit} >
+      <div  className="w-screen h-screen">
+        <div style={{background:
+      "radial-gradient(243.55% 153.69% at 23.48% -1.07%, #EBF3F5 10.46%, #C5E2F0 100%) " ,paddingBottom:"17vh"}} className=' ml-36 mt-24 rounded-2xl border-4 w-9/12'>
+        <form className=" responsive-form py-12 px-12" onSubmit={handleSubmit} >
+        <label>
+            Avatar <span className='text-red-500'>*</span>
+            <br />
+            <input
+              className="border-2 rounded-lg w-72 mt-2 mb-2"
+              type="file"
+              name="avatar"
+              onChange={handleChange}
+              accept="image/*"
+              required
+            />
+          </label>
+          <br />
+          <label>
+            Cover Image 
+            <br />
+            <input
+              className="border-2 rounded-lg w-72 mt-2 mb-2"
+              type="file"
+              name="coverImage"
+              onChange={handleChange}
+              accept="image/*"
+            />
+          </label>
+          <br />
       <label htmlFor="name" >
-        Enter your Name
+        Enter your Name <span className='text-red-500'>*</span>
         <br />
         <input
         className="border-2 rounded-lg w-72 mt-2 mb-2"
@@ -70,7 +108,7 @@ function Singin() {
       </label>
       <br />
       <label htmlFor="dob" >
-        DOB
+        DOB <span className='text-red-500'>*</span>
         <br />
         <input
         className="border-2 rounded-lg w-72 mt-2 mb-2"
@@ -83,7 +121,7 @@ function Singin() {
       </label>
       <br />
       <label htmlFor="username">
-        Username 
+        Username <span className='text-red-500'>*</span>
         <br />
         <input
         className="border-2 rounded-lg w-72 mt-2 mb-2"
@@ -96,7 +134,7 @@ function Singin() {
       </label>
       <br />
       <label htmlFor="password" className="mt-6">
-        Password
+        Password <span className='text-red-500'>*</span>
         <br />
         <input
         className="border-2 rounded-lg w-72 mt-2 bg-slate-300 hover:bg-white"
@@ -110,7 +148,7 @@ function Singin() {
       <br />
       <div>
         <label htmlFor="select">
-          Select
+          Select <span className='text-red-500'>*</span>
           <select
           className="border-2 rounded-lg w-52 mt-10"
             name="select"
@@ -131,7 +169,7 @@ function Singin() {
           onChange={handleChange}
           checked={userData.checkbox}
         />
-        Accept T&C (read document carefully)
+        Accept T&C <span className='text-red-500'>*</span>
       </label>
       <br />
       <div className="flex mt-12 ">

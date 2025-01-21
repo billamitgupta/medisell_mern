@@ -1,20 +1,30 @@
-import React from "react";
+import React, {useState} from "react";
+import { Link } from "react-router-dom";
 import logi from "../../src/image/e371b4da-02a5-403c-8ca7-59b217a10216.jpeg";
 import Grid from "@mui/material/Unstable_Grid2";
 import "../../src/style/login.css";
 
 function Login() {
+
+  const [userData, setUserData] = useState({
+    username: '',
+    password: '',
+    avatar: null,
+    checkbox: false,
+  });
+
+  const handleChange = (e) => {
+    e.preventDefault();
+    const {username, password} = e.target;
+    setUserData((prevData) => ({...prevData, username, password}));
+    }
+
   return (
     <body>
       <div className="loginBody w-screen h-screen">
         <div
         className="  w-9/12 ml-36 mt-24 rounded-2xl border-4 bg-"
-          style={{
-            
-            
-            
-            
-            background:
+          style={{ackground:
               "radial-gradient(243.55% 153.69% at 23.48% -1.07%, #EBF3F5 10.46%, #C5E2F0 100%)",
           }}
         >
@@ -39,6 +49,7 @@ function Login() {
                   <input
                     type="textbox"
                     placeholder="Username"
+                    onChange={handleChange}
                     style={{
                       border: "1px ",
                       margin: "1vh",
@@ -56,6 +67,7 @@ function Login() {
                   <input
                     type="password"
                     placeholder="Password"
+                    onChange={handleChange}
                     style={{
                       border: "1px",
                       margin: "1vh",
@@ -96,8 +108,9 @@ function Login() {
                     marginTop: "8vh",
                   }}
                 />
-                <input type="button" value="" style={{ marginLeft: "5vh" }} />
-                Signin
+                <Link to="/signin" >
+                <input type="button" value="Signin" style={{ marginLeft: "5vh" }} />
+                </Link>
               </form>
             </div>
           </Grid>
