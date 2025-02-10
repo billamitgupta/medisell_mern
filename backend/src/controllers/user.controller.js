@@ -51,7 +51,7 @@ const registerUser = asyncHandler(async (req, res) => {
         throw new ApiError(500, "User not created")
     }
 
-    return res.status(201).json(new ApiResponse(200, createdUser, "User created successfully"))
+    return res.status(201).json(new ApiResponse(201, createdUser, "User created successfully"))
 })
 
 const generateAccessAndRefreshToken = async(userId) => {
@@ -182,6 +182,7 @@ const changeCurrentUserPassword = asyncHandler(async (req, res) => {
 })
 
 const getCurrentUser = asyncHandler(async (req, res) => {
+    console.log("getCurrentUser")
     return res.status(200)
     .json(new ApiResponse(200, req.user, "User fetched successfully"))
 })
